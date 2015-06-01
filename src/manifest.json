@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Gifsound to 10Loop",
-  "description": "Create 10Loop loop from gifsound",
+  "name": "Send to 10Loop",
+  "description": "Create 10Loop loop from current page data",
   "version": "1.0.0",
 
    "icons": {
@@ -12,8 +12,6 @@
   },
 
   "permissions": [
-    "https://gifsound.com/",
-    "http://gifsound.com/",
     "tabs"
   ],
 
@@ -30,7 +28,7 @@
   ],
 
   "page_action": {
-    "default_title": "Gifsound to 10Loop",
+    "default_title": "Send to 10Loop",
     "default_icon": "icons/icon19.png"
   }
 }

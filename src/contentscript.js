@@ -1,5 +1,10 @@
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
+    console.log(request)
     if (request.requestURLS == true)
-      sendResponse({"video": document.querySelectorAll("input[name=gif]")[0].value, "sound": document.querySelectorAll("input[name=sound]")[0].value});
+      sendResponse({
+          "video": document.getElementById("gif").currentSrc,
+          "sound": document.querySelectorAll("input[name=sound]")[0].value,
+          "start": document.querySelectorAll("input[name=s]")[0].value
+      });
   });
